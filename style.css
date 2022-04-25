@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+   --mostly-black-blue: #1b2330;
+   --very-dark-blue: #0b1524;
+   --dark-desaturated-blue: #202a3c;
+   --white: #fff;
+   --soft-cyan: #62e0d9;
+   --soft-lime-green: #61d97c;
+   --moderate-blue: #34a0cd;
+   --light-red: #ff4242;
+   --regular: 400;
+   --bold: 700;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: var(--mostly-black-blue);
+   color: var(--white);
+   font-family: "Open Sans", sans-serif;
+   font-size: 14px;
+   font-weight: var(--regular);
+}
+
+header {
+   background-image: url(./images/bg-curvy-desktop.svg);
+   background-repeat: no-repeat;
+   background-position-y: bottom;
+   background-size: 100%;
+   padding: 50px 0 170px;
+}
+
+h1,
+h2,
+h3 {
+   font-family: "Raleway", sans-serif;
+   line-height: 1.5;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.green {
+   color: var(--soft-lime-green);
+}
+
+.red {
+   color: var(--light-red);
+}
+
+.navigation-bar {
+   font-family: "Raleway", sans-serif;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   padding: 0 80px 75px;
+}
+
+.header-nav ul {
+   display: flex;
+}
+
+li {
+   list-style-type: none;
+}
+
+.header-nav li:not(:last-of-type) {
+   margin-right: 50px;
+}
+
+a {
+   color: var(--white);
+   text-decoration: none;
+}
+
+nav a {
+   color: #a7adbb;
+   font-size: 16px;
+   transition: color 500ms;
+}
+
+nav a:hover {
+   color: var(--white);
+}
+
+.intro-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 0 30px;
+}
+
+#illustration-intro {
+   margin-bottom: 35px;
+}
+
+h1 {
+   font-size: 40px;
+   max-width: 886px;
+   margin-bottom: 30px;
+}
+
+#description {
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 32px;
+   max-width: 630px;
+}
+
+.btn {
+   color: var(--white);
+   cursor: pointer;
+   border: none;
+   font-family: "Raleway", sans-serif;
+   font-weight: var(--bold);
+   transition: filter 400ms;
+}
+
+.btn:hover {
+   filter: brightness(75%);
+}
+
+.intro-container .btn {
+   background: linear-gradient(138.1deg, #63e1d9 -49.34%, #34a0cd 100%);
+   font-size: 16px;
+   border-radius: 28px;
+   width: 280px;
+   height: 56px;
+   box-shadow: 2px 3px 6px 0px #00000029;
+}
+
+main {
+   background-color: #191f2b;
+   padding: 0 30px;
+}
+
+.features-container {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(min-content, 356px));
+   gap: 99px 150px;
+   margin-bottom: 130px;
+   justify-content: center;
+}
+
+.feature {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.feature img {
+   height: 65px;
+   margin-bottom: 25px;
+}
+
+.feature h2 {
+   font-size: 20px;
+   margin-bottom: 8px;
+}
+
+.feature p {
+   text-align: center;
+   line-height: 21px;
+}
+
+.stay-productive {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-items: center;
+   padding-bottom: 180px;
+}
+
+#illustration-productive {
+   justify-self: right;
+}
+
+.right-column {
+   width: 85%;
+}
+
+.stay-productive h3 {
+   font-size: 40px;
+   max-width: 498px;
+   margin-bottom: 20px;
+}
+
+.stay-productive p {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+#paragraph-1 {
+   max-width: 575px;
+   margin-bottom: 15px;
+}
+
+#paragraph-2 {
+   margin-bottom: 24px;
+}
+
+.stay-productive a {
+   display: flex;
+   align-items: center;
+   max-width: fit-content;
+   color: var(--soft-cyan);
+   font-size: 16px;
+   line-height: 22px;
+   border-bottom: 1px solid var(--soft-cyan);
+   padding-bottom: 4px;
+   transition: transform 400ms;
+}
+
+.stay-productive a:hover {
+   transform: translateX(8px);
+}
+
+.stay-productive a span {
+   margin-right: 5px;
+}
+
+.testimonials {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 25px;
+}
+
+#quotes-icon {
+   position: absolute;
+   top: -37px;
+   left: -9px;
+}
+
+.testimonial-container {
+   background-color: var(--dark-desaturated-blue);
+   max-width: 360px;
+   padding: 40px 25px 25px;
+   box-shadow: 5px 5px 8px 4px rgba(56, 56, 56, 0.0991282);
+   border-radius: 4px;
+}
+
+.testimonial-container:first-of-type {
+   position: relative;
+}
+
+.testimonial-container:not(:last-of-type) {
+   margin-right: 40px;
+}
+
+.testimonial {
+   margin-bottom: 24px;
+   line-height: 21px;
+}
+
+.reviewer-info {
+   display: flex;
+}
+
+.reviewer-info img {
+   max-width: 24px;
+   max-height: 24px;
+   border-radius: 50%;
+   position: relative;
+   top: 3px;
+   margin-right: 8px;
+}
+
+.reviewer-info .name {
+   font-size: 14px;
+   font-weight: var(--bold);
+}
+
+.reviewer-info .title {
+   font-size: 12px;
+}
+
+.email-sign-up {
+   background-color: var(--mostly-black-blue);
+   box-shadow: 5px 5px 8px 0px #00000041;
+   border-radius: 9px;
+   padding: 40px 77px;
+   margin: auto;
+   max-width: 863px;
+   text-align: center;
+   transform: translateY(50%);
+}
+
+.email-sign-up h3 {
+   font-size: 32px;
+   margin-bottom: 16px;
+}
+
+#sign-up-text {
+   line-height: 21px;
+   margin-bottom: 38px;
+}
+
+form {
+   display: flex;
+   justify-content: center;
+}
+
+.field-container {
+   margin-right: 30px;
+   width: 100%;
+}
+
+input[type="email"] {
+   font-size: 16px;
+   background-color: var(--white);
+   max-width: 100%;
+   width: 100%;
+   height: 48px;
+   text-indent: 38px;
+   border: none;
+   border-radius: 24px;
+}
+
+::placeholder {
+   font-size: 14px;
+}
+
+#message {
+   font-weight: var(--bold);
+   margin-top: 10px;
+}
+
+.hidden {
+   display: none;
+}
+
+.email-sign-up .btn {
+   background: linear-gradient(129.57deg, #63e1d9 -26.63%, #34a0cd 100%);
+   border-radius: 24px;
+   font-size: 14px;
+   min-width: 200px;
+   height: 48px;
+}
+
+.footer-container {
+   background-color: var(--very-dark-blue);
+}
+
+footer {
+   background-color: inherit;
+   padding: 200px 30px 53px;
+   max-width: 1305px;
+   margin: auto;
+}
+
+footer .fylo-logo {
+   width: 108px;
+   margin-bottom: 52px;
+}
+
+.footer-content {
+   display: flex;
+}
+
+.location {
+   display: flex;
+   max-width: 398px;
+   margin-right: 80px;
+}
+
+#location-icon {
+   padding-top: 5px;
+   margin-right: 27px;
+   height: fit-content;
+}
+
+#lorem-ipsum {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.contact-info {
+   margin-right: 146px;
+   white-space: nowrap;
+}
+
+.contact-info > * {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.contact-info > *:hover {
+   text-decoration: underline;
+}
+
+.phone {
+   margin-bottom: 16px;
+}
+
+.contact-info img {
+   margin-right: 25px;
+}
+
+.links-column {
+   white-space: nowrap;
+}
+
+.links-column li:not(:last-of-type) {
+   margin-bottom: 16px;
+}
+
+.links-column-1 {
+   margin-right: 80px;
+}
+
+.links-column-2 {
+   margin-right: 114px;
+}
+
+.social-media-icons {
+   display: flex;
+}
+
+.social-media-icons li:not(:last-of-type) {
+   margin-right: 12px;
+}
+
+.social-media-icons a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid var(--white);
+   border-radius: 50%;
+   min-height: 32px;
+   min-width: 32px;
+   transition: all 500ms;
+}
+
+.social-media-icons a:hover {
+   color: var(--soft-cyan);
+   border-color: var(--soft-cyan);
+}
+
+.fab {
+   font-size: 16px;
+}
+
+@media (max-width: 1109px) {
+   footer {
+      padding-left: 60px;
+   }
+
+   .footer-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 50px;
+   }
+
+   .location {
+      margin-right: 40px;
+   }
+
+   .contact-info {
+      margin-right: 0;
+   }
+
+   .links-column-1 {
+      padding-left: 40px;
+   }
+
+   .social-media-icons {
+      padding-left: 37px;
+   }
+}
+
+@media (max-width: 950px) {
+   .navigation-bar {
+      padding-left: 40px;
+      padding-right: 40px;
+   }
+
+   header .fylo-logo {
+      width: 123px;
+   }
+
+   .header-nav li:not(:last-of-type) {
+      margin-right: 25px;
+   }
+
+   .testimonials {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .testimonial-container:not(:last-of-type) {
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+}
+
+@media (max-width: 840px) {
+   .stay-productive {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .right-column {
+      margin-top: 50px;
+   }
+
+   .stay-productive h3 {
+      max-width: unset;
+      font-size: 30px;
+   }
+
+   #paragraph-1 {
+      max-width: 94%;
+   }
+
+   #paragraph-2 {
+      max-width: 93%;
+   }
+}
+
+@media (max-width: 768px) {
+   .footer-content {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .location {
+      margin-right: 0;
+   }
+
+   .links-column-1 {
+      padding-left: 0;
+   }
+
+   .social-media-icons {
+      padding-left: 0;
+      align-self: center;
+   }
+}
+
+@media (max-width: 750px) {
+   .navigation-bar {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   header .fylo-logo {
+      width: 80px;
+   }
+
+   .header-nav li:not(:last-of-type) {
+      margin-right: 20px;
+   }
+
+   .header-nav a {
+      font-size: 14px;
+   }
+
+   h1 {
+      font-size: 31px;
+   }
+
+   #description {
+      font-size: 18px;
+   }
+
+   .features-container {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .feature {
+      max-width: 356px;
+   }
+
+   .testimonials {
+      margin-bottom: 0;
+   }
+
+   .email-sign-up {
+      padding: 40px;
+   }
+
+   form {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .field-container {
+      margin-right: 0;
+   }
+
+   input[type="email"] {
+      width: 440px;
+   }
+
+   .email-sign-up .btn {
+      margin-top: 20px;
+      width: 230px;
+   }
+
+   footer {
+      padding-top: 250px;
+   }
+}
+
+@media (max-width: 530px) {
+   .email-sign-up {
+      padding: 30px;
+   }
+
+   .email-sign-up h3 {
+      font-size: 19px;
+   }
+
+   input[type="email"] {
+      height: 42px;
+   }
+
+   .email-sign-up .btn {
+      height: 45px;
+   }
+
+   footer {
+      padding-left: 30px;
+   }
+}
+
+@media (max-width: 380px) {
+   h1 {
+      font-size: 25px;
+   }
+
+   #description {
+      font-size: 16px;
+   }
+
+   .intro-container .btn {
+      width: 240px;
+      height: 48px;
+      font-size: 14px;
+   }
+
+   main {
+      padding: 0 25px;
+   }
+
+   .stay-productive h3 {
+      font-size: 25px;
+   }
+
+   input[type="email"] {
+      text-indent: 28px;
+   }
+
+   .email-sign-up .btn {
+      width: 200px;
+   }
+}
+
+@media (max-width: 350px) {
+   .header-nav li:not(:last-of-type) {
+      margin-right: 15px;
+   }
+
+   .header-nav a {
+      font-size: 13px;
+   }
+}
